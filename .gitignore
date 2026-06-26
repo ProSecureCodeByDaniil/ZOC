@@ -1,3 +1,5 @@
+# ==================== COMPILATION OUTPUTS ====================
+
 # Prerequisites
 *.d
 
@@ -53,3 +55,85 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# ==================== PROJECT-SPECIFIC FILES ====================
+
+# Сервис (скомпилированный бинарник)
+secure_note_server
+
+# Папка с данными (создается при работе сервиса)
+data/
+data/*
+
+# ==================== CHECKER AND SPLOIT OUTPUTS ====================
+
+# Временные файлы, создаваемые сплоитом
+hex.txt
+decoded_hex.txt
+combination_32.txt
+flags.txt
+[0-9].txt
+[0-9][0-9].txt
+
+# Логи чекера (если они генерируются)
+*.log
+logs/
+
+# ==================== PYTHON CACHE ====================
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==================== IDE AND EDITOR FILES ====================
+
+# Visual Studio Code
+.vscode/
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ==================== OS FILES ====================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+*.tmp
