@@ -1,0 +1,9 @@
+services:
+  secure_note:
+    name: secure_note
+    checker:
+      basedir: ./checkers/secure_note
+      script: ./checker.py
+      setup: echo "No dependencies required"
+    vuln:
+      basedir: ./services/secure_note

@@ -1,0 +1,8 @@
+version: '2.4'
+
+services:
+  secure_note:
+    build: .
+    ports:
+      - "4444:4444"
+    restart: unless-stopped
